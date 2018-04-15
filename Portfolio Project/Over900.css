@@ -1,0 +1,42 @@
+.menu {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    max-width: 750;
+    position: static;
+    transform: translate(0, 0);
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 30px;
+}
+
+h2 {
+    order: 2;
+    width: 100%;
+}
+
+.feature_one {
+    order: 3;
+    width: 33%
+}
+
+.feature_two {
+    order: 4;
+    width: 33%;
+   
+}
+
+.feature_three {
+    order: 5;
+    width: 33%;
+    
+}

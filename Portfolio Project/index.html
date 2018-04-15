@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href = "main.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px) and (max-width: 899px)" href = "Over600.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 900px)" href = "Over900.css">
+</head>
+<body>
+    <header>
+        <h1>Michael Clancy</h1>
+        <h3>Front-End Developer</h3>
+        <span class="menu">&#9776;</span>
+    </header>
+    <hr>
+    <nav id="drawer" class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Featured Work</li>
+            <li>Bio</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="top">
+            <img id="coffee" src="Images/home-office.jpg" alt="coffee pic">
+        </div>
+        <h2 class="featured_work">Featured Work</h2>
+        <div class="feature_one">
+            <img id="obama" src="Images/obama.jpg" alt="president pic">
+            <h3>OBAMA</h3>
+            <h6>https://i2.wp.com/techpoint.ng/wp-content/uploads/2015/05/p120312ps-02463.jpg?w=560&ssl=1</h6>
+        </div>
+        <div class="feature_two">
+            <img id="tree" src="Images/Big%20Tree.jpg" alt="tree pic">
+            <h3>TREE</h3>
+            <h6>https://www.flickr.com/photos/15416579@N00/79869767/</h6>
+        </div>
+        <div class="feature_three">
+            <img id="tablet" src="Images/Tablet.jpg" alt="tablet pic">
+            <h3>TABLET</h3>
+            <h6>https://pixabay.com/en/homework-the-student-tablet-3235100/</h6>
+        </div>
+    </div>
+    <script>
+      var menu = document.querySelector('span.menu');
+      var drawer = document.querySelector('#drawer');
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+    </script>
+</body>
+</html>
